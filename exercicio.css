@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+header {
+    width:100%;
+    min-height: 112px;
+    border-bottom: rgb(202, 198, 198) 1px solid;
+}
+.header {
+    display: flex;
+}
+.google-foto {
+    width:120px;
+    height:40px;
+    margin:30px
+}
+    .opcoes {
+        display:flex
+    }
+    .opcoes div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:rgb(125, 123, 123);
+        height:55px;
+        width:80px;
+    }
+    .opcoes .todos {
+        width:60px;
+        color:black;
+        border-bottom: black solid 2px;
+    }
+    .opcoes .menor, .mais, .videos, .maps {
+        width:60px
+    }
+
+    .opcoes div:hover {
+        color:black
+    }
+.container-column1, .containercolumn2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    width:100%;
+    min-width: 0px;
+}
+.barra-pesquisa {
+    min-width: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width:100%;
+    max-width:500px;
+    height:50px;
+    border: rgba(55, 54, 54, 0.199) 1px solid;
+    border-radius: 26px;
+    padding-left:20px;
+    margin: 23px 0px
+}
+.bolinha1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:42px;
+    height:42px;
+    border-radius: 21px;
+}
+.bolinha2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:42px;
+    height:42px;
+    border-radius: 21px;
+    margin-right:10px;
+}
+.bolinha1:hover ,.bolinha2:hover{
+    background-color: rgba(174, 172, 172, 0.412);
+}
+.bolinha2 img {
+    width:36px;
+    height: 36px;
+    border-radius: 18px;
+    
+}
+.bento-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 4px); /* Fixa a largura das colunas */
+    grid-template-rows: repeat(3, 4px);    /* Fixa a altura das linhas */
+    gap: 2px;                              /* Diminua este valor para aproximar os pontos */
+    width: max-content;                    /* Garante que o container não estique */
+    cursor: pointer;
+}
+
+.bento-menu span {
+    display:block;
+    background-color: #555;                /* Cor cinza da imagem */
+    border-radius: 50%;
+    width: 4px;                            /* Tamanho exato do ponto */
+    height: 4px;
+}
+.segurador {
+    display:flex;
+    margin: 20px 20px 0px auto
+}
+section {
+    padding: 0 16px 0 190px; /* mantém o espaço no desktop */
+    max-width: 900px;         /* não deixa crescer demais em telas grandes */
+}
+section p {
+    color:rgb(80, 78, 78)
+}
+.sites {
+    width: 100%;
+    max-width: 710px;         /* máximo de 600px, mas encolhe se necessário */
+}
+.site h1 {
+    font-size:20px;
+    color:rgb(9, 9, 163);
+    margin:2px;
+    padding:0px;
+}
+h1 a {
+    text-decoration: none
+}
+.site h2 {
+    font-size:16px;
+    color:rgb(20, 134, 20);
+    margin:2px;
+    padding:0px;
+}
+.site h3 {
+    font-size:14px;
+    margin:2px;
+    padding:0px;
+    margin-bottom:15px
+}
+.caixasuperior, .utilidades{
+    display:flex;
+    align-items: center;
+    width:100%;
+    min-height:40px;
+    padding-left:200px;
+    background-color:rgba(220, 219, 219, 0.766);
+    border-top: rgba(189, 187, 187, 0.766) 1px solid;
+}
+.brasil {
+    border-right: rgba(189, 187, 187, 0.766) 1px solid;
+    padding-right: 15px
+}
+.links {
+    text-decoration: none;
+    color: rgba(27, 26, 26, 0.804);
+}
+.links:hover {
+    text-decoration: underline 1px;
+}
+.utilidades a {
+    padding-right:30px
+}
+.caixasuperior p {
+    padding-left: 15px
+}
+.container-column2 {
+    display:none;
+    width:300px
+}
+@media (max-width: 768px) {
+    section {
+        padding: 0 16px;   /* remove o recuo lateral no mobile */
+  }
+    .caixasuperior, .utilidades {
+        padding-left: 16px; /* acompanha a section */
+  }
+    .container-column1 {
+        display:none
+  }
+    .container-column2 {
+        display:flex;
+        flex-direction: column;
+  }
+    .opcoes div {
+        margin-left: 12px
+  }
+    .barra-pesquisa {
+        margin-left:12px;
+        width:600px
+  }
+}
+@media (max-width: 524px) {
+    .barra-pesquisa{
+        width: 400px;
+    }
+    .opcoes .ferramenta{
+        display:none
+    }
+}
+@media (max-width:428px) {
+    .barra-pesquisa{
+        width: 350px;
+    }
+    .opcoes .mais{
+        display:none
+    }
+}
+@media (max-width:375px) {
+    .barra-pesquisa{
+        width: 296px;
+    }
+    .opcoes .maps{
+        display:none
+    }
+    .utilidades a {
+        padding: 5px;
+        margin-right: 5px
+    }
+}
