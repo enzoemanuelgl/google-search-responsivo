@@ -1,1 +1,3 @@
-opa galera, pagina feita no curso do b7web
+Opa galera, Página feita no curso do B7Web
+
+Estou aprendendo a usar o GitHub Agora, Por Isso os Commits Aleatórios
