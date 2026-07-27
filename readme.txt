@@ -1,3 +1,1 @@
-Opa galera, Página feita no curso do B7Web
-
-Estou aprendendo a usar o GitHub Agora, Por Isso os Commits Aleatórios
+Responsive Google page created while doing a course from "B7Web" that goes over the fundamentals and advanced topics in HTML5 and CSS
